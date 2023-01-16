@@ -1,0 +1,161 @@
+<html>
+
+
+<head>
+    
+    <title> Form Vilidation </title>
+    
+    <script type ="text/javascript">
+    
+    </script>
+    
+    <style>
+        body{
+            background-image: url("https://mppolytechnic.ac.in/images/slider/slide3.jpg");
+            background-repeat:no-repeat;
+            background-size:100% 100%;
+            border: 2px solid rgb(0, 0, 0);
+            padding: 20px;
+            
+            color: white;
+        }
+        h2{
+              font-weight: bold;
+          } 
+       
+    </style>
+   
+    
+    </head>
+
+    
+    
+    <body>
+    <center>
+        <h1 style="color:rgb(0, 0, 0); font-size: 50px"><u> Maharana Pratap Polytechnic </u> </h1>
+       <h2 style="color:rgb(0, 0, 0);font-size: 30px;"><U> :REGISTRATION FORM: </U></h2>
+       <form action ="/cgi-bin/test.cgi" name ="myForm" onsubmit ="return(validate());">
+    <table cellspacing ="9" cellpadding ="4" border ="0" style="background-color:rgba(17, 73, 73, 0.397); border-radius:25px" >
+        
+        <tr>   
+        <td align ="right"> Name </td>
+            <td> <input type ="text" name ="Name"/></td>
+        <td align="right">Gender </td>
+            <td>
+            <select  name="Gender"  >
+            <option value="-1" selected>[choose gender] </option>
+            <option value="1"> Male</option>
+            <option value="2">Female</option>
+            <OPTION value="3">Others</OPTION>
+            </select>
+            </td>
+        
+            
+        </tr>
+        
+         <tr>
+        <td align="right">Father's Name</td>
+        <td> <input type ="text"/> </td>
+      
+        <td align="right">Mother's Name</td>
+        <td> <input type ="text"/> </td>
+        </tr>
+        
+        <tr>
+        <td align="right">Category </td>
+        <td> 
+            <input type="checkbox">Gen
+              <input type="checkbox">OBC
+              <input type="checkbox">SC
+              <input type="checkbox">ST
+                   </td>
+        
+            <td align="right">Religion</td>
+            <td> <input type="text"/> </td>
+                
+        </tr>
+        
+        <tr>
+        <td align="right">D.O.B</td>
+        <td> <input type="date"</td>
+            <td align="right"> Blood Group </td>
+            <td> 
+                <input type="checkbox">A 
+                <input type="checkbox">B
+                <input type="checkbox">O
+                <input type="checkbox">N/A
+                
+            </td>
+            
+        </tr>
+        
+        
+    
+        <tr>
+         <td align="right"> Branch</td>
+     
+        <td>
+        <select name ="Branch"> 
+            <option value ="-1" selected> [choose branch]</option>
+            
+            <option value ="1"> CSE</option>
+            <option value ="2">EE</option>
+            <option vlaue ="3">MC</option>
+            <option value="4">EEE </option>
+            <option value="5">MPE</option>
+            </select>
+        
+        <td align ="right"> Year </td>
+        <td>
+        <select name ="Year">
+            <option value="-1">[choose Year]</option>
+        <option value="1"> 1st Year</option>
+            <option vaue="2"> 2nd Year/LT. Entry</option>
+            
+            
+            
+        
+        </select>
+            </td>
+            </tr>
+        
+          
+        <tr>
+        <td align ="right"> Mobile No. </td>
+            <td> <input type ="text"/> </td>
+            
+        <td align ="right"> Email </td>
+            <td> <input type ="text"/> </td>
+        
+        
+        <tr>    
+        <td align ="right"> Country  </td>
+            <td> <input type ="text"/> </td>
+            
+        
+       
+        <td align="right"> State</td>
+        <td> <input type ="text"/> </td>
+        </tr>
+        
+        
+        <tr>
+        <td align="right">Zip Code</td>
+        <td> <input type="text"/> </td>
+            
+            <td align="right"> Permanent Address </td>
+            <td> <input type="text"/> </td>
+        </tr>
+        
+       
+         
+        
+        </table></br></br>
+    <button style="border-radius: 25px;">Submit</button>
+     &nbsp;&nbsp;&nbsp;
+     <button style="border-radius: 25px;"> Reset</button>
+    </form>
+    </center>
+    </body>
+
+</html>
